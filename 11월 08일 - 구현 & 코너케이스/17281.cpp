@@ -50,7 +50,7 @@ int getScore(vector<vector<int>>& inning, int n) {
             break;
         }
 
-        int player = order[i++]; //타석으로 나갈 주자 (주자 순서 배열의 i번째 선수)
+        int player = order[i]; //타석으로 나갈 주자 (주자 순서 배열의 i번째 선수)
         i = i % 9 + 1;  //i가 9를 초과할 경우 다시 첫번째 주자부터 시작
         if (inning[cur][player] == 0) { //아웃
             out++;  //아웃 수를 1늘려줌
